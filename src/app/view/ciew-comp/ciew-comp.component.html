@@ -1,0 +1,13 @@
+<p>ciew-comp works!</p>
+<input type="text" [(ngModel)]="username"/>
+<h3>{{username}}</h3>
+<button (click)="search()">Search</button>
+
+<div *ngIf ="response">
+
+    <h4> login is : {{response.login}} </h4>
+    <h4> url is : {{response.url}} </h4>
+    <h4> public_repos is : {{response.public_repos}} </h4>
+    <h4> id is : {{response.id}} </h4>
+
+</div>
